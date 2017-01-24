@@ -1,0 +1,14 @@
+{
+    "name": "k1sul1/wplf-export",
+    "description": "Export form data from WP Libre Form.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Christian Nikkanen",
+            "email": "christian.nikkanen@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
