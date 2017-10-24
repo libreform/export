@@ -2,7 +2,7 @@
 /**
  * Plugin name: WPLF Export
  * Plugin URI: https://github.com/k1sul1/wplf-export
- * Description: Export form data from WP Libre Form.
+ * Description: Export form data from WP Libre Form
  * Version: 1.0.1
  * Author: @k1sul1
  * Author URI: https://github.com/k1sul1
@@ -198,7 +198,7 @@ class WPLF_Export {
         If it doesn't click here.
         </a></p>";
       $html .= "</div>";
-      
+
       $html .= "<script>setTimeout(function(){document.getElementById('wplf_export_save').click();},100);</script>";
     }
 
