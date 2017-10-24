@@ -19,7 +19,7 @@ composer require k1sul1/wplf-export
 Seriously? Select your forms, select Export from bulk action menu and press "Apply".
 For best results, select only one type of form for export.
 
-![for dummies](http://i.imgur.com/YfPzKNd.png)
+![for dummies](assets/screenshot-1.png)
 
 # Customizing your export
 
