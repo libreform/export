@@ -2,13 +2,26 @@
 /**
  * Plugin name: WPLF Export
  * Plugin URI: https://github.com/k1sul1/wplf-export
- * Description: Export form data from WP Libre Form.
+ * Description: Export form data from WP Libre Form
  * Version: 1.0.1
  * Author: @k1sul1
  * Author URI: https://github.com/k1sul1
- * License: GPLv2
+ * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.html
  * Text Domain: wplf-export
+ */
+
+/** Copyright 2017 Christian Nikkanen
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License, version 3, as
+  published by the Free Software Foundation.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
 class WPLF_Export {
@@ -198,7 +211,7 @@ class WPLF_Export {
         If it doesn't click here.
         </a></p>";
       $html .= "</div>";
-      
+
       $html .= "<script>setTimeout(function(){document.getElementById('wplf_export_save').click();},100);</script>";
     }
 
