@@ -26,7 +26,6 @@
 
 class WPLF_Export {
   public static $instance;
-  public $csv;
 
   public static function instance() {
     if (is_null(self::$instance)) {
