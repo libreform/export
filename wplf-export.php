@@ -153,7 +153,7 @@ class WPLF_Export {
   }
 
   public function handleDownload() {
-    if (parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH) === '/wplf-export') {
+    if (!empty($_GET["action"]) && $_GET["action"] === "wplf-export") {
       $allowed = current_user_can(
           apply_filters('wplf_export_capability', 'edit_others_posts')
       );
@@ -196,7 +196,7 @@ class WPLF_Export {
         <p>If the imported file seems to be broken, select only one type
         of form and try exporting again.</p>";
       $html .= "<p>The download should start automatically.
-        <a href='/wplf-export?wplf-export-download=$fpath' id='wplf_export_save' target='_blank'>
+        <a href='?action=wplf-export&wplf-export-download=$fpath' id='wplf_export_save' target='_blank'>
         If it doesn't click here.
         </a></p>";
       $html .= "</div>";
@@ -206,7 +206,7 @@ class WPLF_Export {
       $html .= "<div id='wplf_export_nag' class='notice notice-success is-dismissible'>";
       $html .= "<p>Exported $count submissions.</p>";
       $html .= "<p>The download should start automatically.
-        <a href='/wplf-export?wplf-export-download=$fpath' id='wplf_export_save' target='_blank'>
+        <a href='?action=wplf-export&wplf-export-download=$fpath' id='wplf_export_save' target='_blank'>
         If it doesn't click here.
         </a></p>";
       $html .= "</div>";
